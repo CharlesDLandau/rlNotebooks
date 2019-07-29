@@ -231,20 +231,20 @@ reward_incidents = list(filter(lambda i: i['reward'], result['history']))
 i = 0
 imshow(reward_incidents[i]['observation'])
 ```
-![veiwport](/img/output_27_1.png)
+![veiwport](https://serve-md.charlesdlandau.net/img/output_27_1.png)
 
 ```python
 i = 1
 imshow(reward_incidents[i]['observation'])
 ```
 
-![viewport](/img/output_28_1.png)
+![viewport](https://serve-md.charlesdlandau.net/img/output_28_1.png)
 ```python
 i = 2
 imshow(reward_incidents[i]['observation'])
 ```
 
-![viewport](/img/output_29_1.png)
+![viewport](https://serve-md.charlesdlandau.net/img/output_29_1.png)
 
 They're all images that seem to be captured right after the tank scores a hit.
 
