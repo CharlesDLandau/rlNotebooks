@@ -23,7 +23,11 @@ def run_job(env_name, model, steps, episodes_per_train=1,
     
     for i in range(steps):
         action = model.decision_function(obs=observation, env=env)
-        observation, reward, done, info = env.step(action)
+        if isinstance(action, int):
+          observation, reward, done, info = env.step(action)
+        else:
+          observation, reward, done, info = env.step(action[0])
+          
         history.append({
             "episode": episode,
             "observation": observation,
