@@ -10,7 +10,7 @@ In this installment we'll train a tank commander. I'm sharing a bunch of the cod
 
 #### Side note: OpenAI Gym installation
 
-...is somewhat painful. Many online notebook services like [colab](https://colab.research.google.com) and [Kaggle](https://kaggle.org) don't allow you to install some of the OpenAI environments, so I'm going to stick to Atari for now. If you're interested in trying to set up OpenAI gym with more flexibility, you might start with [this interesting write-up](https://medium.com/coinmonks/preparing-a-headless-environment-for-openais-gym-with-docker-and-tensorflow-1bd0e0d31663).
+...is somewhat painful. Many online notebook services like [colab](https://colab.research.google.com) and [Kaggle](https://kaggle.com) don't allow you to install some of the OpenAI environments, so I'm going to stick to Atari for now. If you're interested in trying to set up OpenAI gym with more flexibility, you might start with [this interesting write-up](https://medium.com/coinmonks/preparing-a-headless-environment-for-openais-gym-with-docker-and-tensorflow-1bd0e0d31663).
 
 In order to write agents that actually take the game screen into account when making decisions, we'll need to update our `run_job` utility from last time:
 
@@ -101,7 +101,7 @@ imshow(observation_sample[0][139:172, 60:100, :])
 
 
 
-![png](output_9_1.png)
+![png](https://serve-md.charlesdlandau.net/img/output_9_1.png)
 
 
 So, we can certainly crop this image and worry less about the noise...
@@ -128,7 +128,7 @@ imshow(observation_sample[0][80:124, 12:160, :])
 
 
 
-![png](output_13_1.png)
+![png](https://serve-md.charlesdlandau.net/img/output_13_1.png)
 
 
 
@@ -218,7 +218,7 @@ import matplotlib.pyplot as plt
 plt.plot([r['reward'] for r in result['history']])
 ```
 
-![reward](output_25_1.png)
+![reward](https://serve-md.charlesdlandau.net/img/output_25_1.png)
 
 
 Looks like the reward function is simply "score a hit=1 else 0". We can confirm by visualizing the observations at reward time.
