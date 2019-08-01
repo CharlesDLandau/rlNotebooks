@@ -66,7 +66,7 @@ Let's begin by trying to understand our observations in a video:
 render_video(0, result['env']);
 ```
 
-![GIF OF RANDOMAGENT](https://serve-md.charlesdlandau.net/img/tank_lesson_randomagent.gif)
+![GIF OF RANDOMAGENT](https://serve-md.charlesdlandau.net/img/tank-lesson-randomagent.gif)
 
 If, like me, you have never played Robot Tank on an Atari... you can [read the manual](http://www.atarimania.com/game-atari-2600-vcs-robot-tank_s6928.html)! You can learn about the heads up display and more.
 
@@ -397,7 +397,7 @@ for obs in game_life:
 
 With only 120k steps, our tank already seemed decided on a strategy:
 
-![converging_gif](https://serve-md.charlesdlandau.net/img/tank_lesson_converging.gif)
+![converging_gif](https://serve-md.charlesdlandau.net/img/tank-lesson-converging.gif)
 
 As you can see, turning left is powerful in Robotank -- a whole squadron killed!
 
