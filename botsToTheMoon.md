@@ -53,7 +53,7 @@ InteractiveShell.ast_node_interactivity = "all"
 from IPython import display
 ```
 
-With that out of the way, you can implement a high-quality Advantage Actor Critic (A2C) model in just two lines. Simple baselines is great because it has intuitive methods for training and predicting. Even better, it stores our enviornment as a `model.env` member, so all we need for typical workflows is a `model` instance.
+With that out of the way, you can implement a high-quality Advantage Actor Critic (A2C) model in just two lines. Simple Baselines is great because it has intuitive methods for training and predicting. Even better, it stores our enviornment as a `model.env` member, so all we need for typical workflows is a `model` instance.
 
 Let's train -- The following takes a fair bit of time to run:
 
@@ -103,19 +103,18 @@ import numpy as np
 # Number of images to capture
 n_images = 1200
 
-# Our array of images
 images = []
 
-# init a new environment
+# init a new episode
 obs = model.env.reset()
 # init the img var with the starting state of the env
 img = model.env.render(mode='rgb_array')
 
 for i in range(n_images):
-  # At each step, capture an image
+  # At each step, append an image to list
   images.append(img)
 
-  # Advance a step an render
+  # Advance a step and render a new image
   action, _ = model.predict(obs)
   obs, _, _ ,_ = model.env.step(action)
   img = model.env.render(mode='rgb_array')
