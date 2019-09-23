@@ -1,6 +1,10 @@
 
 ### 🤖➡🌜 (Teach Bots to Land on the Moon)
 
+[Tinker with this notebook in Google Colab](https://colab.research.google.com/github/CharlesDLandau/rlNotebooks/blob/master/botsToTheMoon.ipynb)
+
+[GitHub](https://github.com/CharlesDLandau/rlNotebooks)
+
 In the past few episodes we've gone over design princples for reinforcement learning, introduced reinforcement learning with OpenAI Gym, and trained a deep learning model to navigate an OpenAI Gym environment. To accomplish this, we leveraged the agent-environment relationship:
 
 * The agent takes actions in the environment. These can be random, or guided by heuristics, or by a model, or some combination. It recieves data about the environment, like a picture of the environment or a string, and then it takes an action. Afterwards, it recieves a reward from the environment, which amount to positive or negative "reinforcement" of the selected behavior.
